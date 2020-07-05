@@ -28,7 +28,7 @@ import {slugify} from '../util/utilityFunctions'
               </CardText>
               <ul className="post-tags">
                   {tags.map(tag=>(
-                      <li>
+                      <li key={tag}>
                           <Link to={`/tag/${slugify(tag)}`}>
                           <Badge color="primary" className="text-uppercase">
                           {tag}
